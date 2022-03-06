@@ -1,4 +1,4 @@
 # slstatus
 suckless status monitor
 
-![alt text](slstatus-build.png)
+![alt text](https://github.com/AmitChuahan/suckless-slstatus/blob/main/slstatus-bulid.png)
