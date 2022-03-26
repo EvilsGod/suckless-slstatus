@@ -70,9 +70,9 @@ static const struct arg args[] = {
 	{ wifi_perc, " %3s%%  ", "wlan0" },
     { netspeed_tx, " %6s ", "wlan0" },  //transfer network speed
     { netspeed_rx, " %6s  ", "wlan0" }, // receive network speed
-	//{ run_command, "[%4s] ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-    { run_command, "%s ",  "amixer sget Master | grep 'Right:' | awk -F'[][]' '$4 == \"on\" { print \"\" } $4 == \"off\" { print \"\" }'"},
-	{ run_command,   "%s  ",  "amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'"},
+	{ run_command, "%4s ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+    // { run_command, "%s ",  "amixer sget Master | grep 'Right:' | awk -F'[][]' '$4 == \"on\" { print \"\" } $4 == \"off\" { print \"\" }'"},
+	// { run_command,   "%s  ",  "amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'"},
 	{ disk_free, " %.5sGiB  ", "/"  },
 	{ cpu_perc, "CPU  %s%%  ", NULL },
 	{ ram_perc, "RAM  %s%%  ", NULL },
